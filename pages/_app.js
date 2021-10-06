@@ -6,3 +6,5 @@ function MyApp({ Component, pageProps }) {
 }
 
 export default MyApp
+
+//https://www.fabricadecodigo.com/adicionando-autenticacao-do-google-ao-seu-web-app/
