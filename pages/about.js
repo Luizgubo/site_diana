@@ -1,5 +1,5 @@
 function autentificacao() {
-    return 0;
+    return 1;
 }
 const user = autentificacao();
 

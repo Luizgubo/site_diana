@@ -1,10 +1,13 @@
-import '../styles/globals.css'
 import 'tailwindcss/tailwind.css'
 
+import { AuthProvider } from '../contexts/AuthContext'
+
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <AuthProvider>
+      <Component {...pageProps} />
+    </AuthProvider>
+  )
 }
 
 export default MyApp
-
-//https://www.fabricadecodigo.com/adicionando-autenticacao-do-google-ao-seu-web-app/

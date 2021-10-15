@@ -5,7 +5,9 @@ function autentificacao() {
 const user = autentificacao();
 
 export default function Home() {
+
     if(!user) {
+        console.log('vai redirecionar');
         return {
             redirect: {
                 destination: '/about',
@@ -13,5 +15,5 @@ export default function Home() {
             } 
         }
     }
-    return <div>Novo poema</div>
+    return <div>Novo poema teste</div>
 }
